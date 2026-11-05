@@ -1,7 +1,7 @@
 {
- "幼虫脑单细胞转录组：2,607 细胞（644 神经），区室特异聚类": "notebooks/generated/ciona-portal-ciona-myogenic-regulatory-factor-functions-typical.ipynb",
+ "幼虫脑单细胞转录组：2,607 细胞（644 神经），区室特异聚类": "notebooks/generated/ciona-portal-single-cell-transcriptome-profiling-ciona-larval.ipynb",
  "MG 神经元亚型效应基因谱：ddN/MN/MGIN/ACIN": "notebooks/generated/ciona-portal-effector-gene-expression-underlying-neuron-subtype.ipynb",
- "幼体全脑连接组：177 CNS + 54 PNS 神经元、6,618 化学突触、1,206 电突触": "notebooks/generated/ciona-portal-perimortem-fractures-lucy-suggest-mortality-fall.ipynb",
+ "幼体全脑连接组：177 CNS + 54 PNS 神经元、6,618 化学突触、1,206 电突触": "notebooks/generated/ciona-portal-cns-connectome-tadpole-larva-ciona-intestinalis.ipynb",
  "幼体神经元钙成像数据集（CRCNS ci-1）": "notebooks/generated/ciona-portal-generic.ipynb",
  "全胚胎单细胞转录组：90,579 细胞×10 阶段、41 神经元亚型、虚拟谱系": "notebooks/generated/ciona-gse131155-comprehensive-single-cell-transcriptome-lineages-proto.ipynb",
  "感泡 15 种细胞类型图谱：原下丘脑细胞群": "notebooks/generated/ciona-gse166235-hypothalamus-predates-origin-vertebrates.ipynb",
