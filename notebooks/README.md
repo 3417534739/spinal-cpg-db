@@ -1,0 +1,112 @@
+# Notebooks 索引
+
+每个有公开数据链接的条目对应一个预填好的 Jupyter notebook（accession 号已写入）。在 GitHub 上直接点击即可预览；本地或 Binder 运行请先 `pip install -r requirements.txt`。
+
+
+## ciona
+
+- [幼虫脑单细胞转录组：2,607 细胞（644 神经），区室特异聚类](../notebooks/generated/ciona-https-cells-ucsc-edu-ds-ciona-larva-幼虫脑单细胞转录组-2-607-细胞-644-神经-区室特异聚类.ipynb)
+- [MG 神经元亚型效应基因谱：ddN/MN/MGIN/ACIN](../notebooks/generated/ciona-https-osf-io-n7vr2-MG-神经元亚型效应基因谱-ddN-MN-MGIN-ACIN.ipynb)
+- [幼体全脑连接组：177 CNS + 54 PNS 神经元、6,618 化学突触、1,206 电突触](../notebooks/generated/ciona-https-www-nature-com-articles-nature1933-幼体全脑连接组-177-CNS-54-PNS-神经元-6-618-化学突.ipynb)
+- [幼体神经元钙成像数据集（CRCNS ci-1）](../notebooks/generated/ciona-https-crcns-org-data-sets-tunicates-ci-1-幼体神经元钙成像数据集-CRCNS-ci-1.ipynb)
+- [全胚胎单细胞转录组：90,579 细胞×10 阶段、41 神经元亚型、虚拟谱系](../notebooks/generated/ciona-GSE131155-全胚胎单细胞转录组-90-579-细胞-10-阶段-41-神经元亚型-虚.ipynb)
+- [感泡 15 种细胞类型图谱：原下丘脑细胞群](../notebooks/generated/ciona-GSE166235-感泡-15-种细胞类型图谱-原下丘脑细胞群.ipynb)
+- [成体神经复合体空间转录组：cortex/medulla 分区+神经腺](../notebooks/generated/ciona-GSE327796-成体神经复合体空间转录组-cortex-medulla-分区-神经腺.ipynb)
+- [cor-assBVIN78 单神经元成像与消融：自发游泳门控](../notebooks/generated/ciona-https-brainimagelibrary-org-cor-assBVIN78-单神经元成像与消融-自发游泳门控.ipynb)
+
+## amph
+
+- [胚胎 snRNA+scATAC 多组学：发育树与 GRN](../notebooks/generated/amph-https-db-cngb-org-stomics-publications-3-胚胎-snRNA-scATAC-多组学-发育树与-GRN.ipynb)
+- [21 hpf 神经胚 scRNA+ATAC atlas](../notebooks/generated/amph-GSE255742-21-hpf-神经胚-scRNA-ATAC-atlas.ipynb)
+- [七阶段 scRNA 轨迹：三条脊索动物神经发生路线](../notebooks/generated/amph-https-ngdc-cncb-ac-cn-omix-release-OMIX0-七阶段-scRNA-轨迹-三条脊索动物神经发生路线.ipynb)
+- [成体脑+脊髓 snRNA+空间 3D atlas：ZLI/MHB-like 边界](../notebooks/generated/amph-LCY-ICOB-amphiBrain-成体脑-脊髓-snRNA-空间-3D-atlas-ZLI-MHB-lik.ipynb)
+- [胚胎头部 scRNA：细胞类型与调控网络](../notebooks/generated/amph-https-www-ncbi-nlm-nih-gov-bioproject-te-胚胎头部-scRNA-细胞类型与调控网络.ipynb)
+
+## lamp
+
+- [全脑 scRNA atlas：159,381 细胞、成体 151 类/幼体 120 类](../notebooks/generated/lamp-E-MTAB-11087-全脑-scRNA-atlas-159-381-细胞-成体-151-类-幼.ipynb)
+- [成体+幼体脑空间/单细胞表达浏览器](../notebooks/generated/lamp-https-lampreybrain-kaessmannlab-org-成体-幼体脑空间-单细胞表达浏览器.ipynb)
+- [Stereo-seq 3D 空间脑 atlas（LBSPA）](../notebooks/generated/lamp-https-db-cngb-org-stomics-lbspa-Stereo-seq-3D-空间脑-atlas-LBSPA.ipynb)
+
+## poly
+
+- [非鲈形辐鳍鱼基因组与转录组（陆地适应基因）](../notebooks/generated/poly-https-www-ncbi-nlm-nih-gov-bioproject-70-非鲈形辐鳍鱼基因组与转录组-陆地适应基因.ipynb)
+- [P. senegalus 二倍体基因组：20,940 基因+12 组织表达](../notebooks/generated/poly-https-www-ncbi-nlm-nih-gov-bioproject-70-P-senegalus-二倍体基因组-20-940-基因-12-组织表达.ipynb)
+- [胸鳍再生 snRNA/空间/bulk/ATAC（0/1/3/7 dpa）](../notebooks/generated/poly-https-www-ncbi-nlm-nih-gov-bioproject-14-胸鳍再生-snRNA-空间-bulk-ATAC-0-1-3-7-dpa.ipynb)
+- [rapamycin 处理再生 snRNA-seq：表皮/结缔/髓系 mTOR 与代谢状态](../notebooks/generated/poly-https-www-ncbi-nlm-nih-gov-bioproject-14-rapamycin-处理再生-snRNA-seq-表皮-结缔-髓系-mT.ipynb)
+- [水陆过渡运动学与轴向红肌/胸鳍 EMG 同步记录](../notebooks/generated/poly-https-doi-org-10-5683-SP3-JUJY2C-水陆过渡运动学与轴向红肌-胸鳍-EMG-同步记录.ipynb)
+- [tripod gait 完整步态周期参数与模拟数据](../notebooks/generated/poly-mishidasan-undulating_tripod_gait_simuli-tripod-gait-完整步态周期参数与模拟数据.ipynb)
+
+## lung
+
+- [非洲肺鱼 40 Gb 染色体级基因组](../notebooks/generated/lung-https-ngdc-cncb-ac-cn-gwh-Assembly-9785-非洲肺鱼-40-Gb-染色体级基因组.ipynb)
+- [澳洲肺鱼基因组与重复序列比较](../notebooks/generated/lung-PRJNA644903-澳洲肺鱼基因组与重复序列比较.ipynb)
+- [肺/鳃呼吸系统单细胞 atlas](../notebooks/generated/lung-https-figshare-com-articles-dataset-The_-肺-鳃呼吸系统单细胞-atlas.ipynb)
+
+## axol
+
+- [端脑再生 Stereo-seq：损伤后时间程空间单细胞](../notebooks/generated/axol-https-db-cngb-org-stomics-artista-端脑再生-Stereo-seq-损伤后时间程空间单细胞.ipynb)
+- [激活端脑 scRNA：10 类细胞+脊髓投射神经元 marker](../notebooks/generated/axol-PRJNA1200678-激活端脑-scRNA-10-类细胞-脊髓投射神经元-marker.ipynb)
+- [成体 vs 变态后全脑空间比较：5 区 19 切片 83,054 点](../notebooks/generated/axol-GSE317755-成体-vs-变态后全脑空间比较-5-区-19-切片-83-054-点.ipynb)
+- [脑区染色质可及性 atlas](../notebooks/generated/axol-https-doi-org-10-6084-m9-figshare-225484-脑区染色质可及性-atlas.ipynb)
+- [肢体再生细胞状态：blastema/免疫/神经/间充质](../notebooks/generated/axol-GSE106269-肢体再生细胞状态-blastema-免疫-神经-间充质.ipynb)
+- [脊髓损伤早期转录组与 GRN](../notebooks/generated/axol-GSE122939-脊髓损伤早期转录组与-GRN.ipynb)
+- [神经活动-尾部再生功能实验：dpERK 标记+激活操纵](../notebooks/generated/axol-PRJNA1200678-神经活动-尾部再生功能实验-dpERK-标记-激活操纵.ipynb)
+
+## xeno
+
+- [幼体+成体多组织 scRNA：501,358 细胞](../notebooks/generated/xeno-http-bis-zju-edu-cn-XCL-幼体-成体多组织-scRNA-501-358-细胞.ipynb)
+- [蝌蚪脊髓断尾前后 scRNA（X. tropicalis NF50）](../notebooks/generated/xeno-https-www-ebi-ac-uk-gxa-sc-experiments-E-蝌蚪脊髓断尾前后-scRNA-X-tropicalis-NF50.ipynb)
+- [Xenbase：基因/表达/突变体/文献数据库](../notebooks/generated/xeno-https-www-xenbase-org-Xenbase-基因-表达-突变体-文献数据库.ipynb)
+- [dIN 电耦联：whole-cell+GCaMP6s 同步记录](../notebooks/generated/xeno-https-doi-org-10-17630-4e0e1057-85f5-479-dIN-电耦联-whole-cell-GCaMP6s-同步记录.ipynb)
+- [五物种离体脑电生理：fictive vocalization](../notebooks/generated/xeno-10-5061-dryad-2280gb5x3-五物种离体脑电生理-fictive-vocalization.ipynb)
+
+## chick
+
+- [胚胎脊髓 scRNA+LARRY 条形码：11 个祖细胞域](../notebooks/generated/chick-GSE312424-胚胎脊髓-scRNA-LARRY-条形码-11-个祖细胞域.ipynb)
+- [HH26/30/36 臂/腰段脊髓成熟图谱](../notebooks/generated/chick-GSE297980-HH26-30-36-臂-腰段脊髓成熟图谱.ipynb)
+- [运动神经元轴突投射与外周神经肌肉发育数据](../notebooks/generated/chick-GSE297980-运动神经元轴突投射与外周神经肌肉发育数据.ipynb)
+- [胚胎自发运动与运动神经元发育研究汇总](../notebooks/generated/chick-GSE297980-胚胎自发运动与运动神经元发育研究汇总.ipynb)
+- [胚胎肢体运动回路背景数据](../notebooks/generated/chick-GSE297980-胚胎肢体运动回路背景数据.ipynb)
+- [Hox/Pax/Nkx/Olig/Shh 神经管模式化数据](../notebooks/generated/chick-GSE312424-Hox-Pax-Nkx-Olig-Shh-神经管模式化数据.ipynb)
+
+## mouse
+
+- [脊髓细胞类型 harmonized atlas：19,353 细胞/核+SeqSeek](../notebooks/generated/mouse-GSE158380-脊髓细胞类型-harmonized-atlas-19-353-细胞-核.ipynb)
+- [E13.5 脊髓运动神经元 scRNA：LMC/MMC/HMC 亚型](../notebooks/generated/mouse-GSE183759-E13-5-脊髓运动神经元-scRNA-LMC-MMC-HMC-亚型.ipynb)
+- [Allen Brain Cell Atlas：全脑转录组细胞 atlas](../notebooks/generated/mouse-https-alleninstitute-github-io-abc_atlas-Allen-Brain-Cell-Atlas-全脑转录组细胞-atlas.ipynb)
+- [全脊髓原位表达 atlas（P4/P56，分节段浏览）](../notebooks/generated/mouse-https-mousespinal-brain-map-org-全脊髓原位表达-atlas-P4-P56-分节段浏览.ipynb)
+- [单神经元 ephys/形态/转录组配对数据](../notebooks/generated/mouse-https-celltypes-brain-map-org-单神经元-ephys-形态-转录组配对数据.ipynb)
+- [大规模 Patch-seq 流程与 QC（BICCN）](../notebooks/generated/mouse-https-celltypes-brain-map-org-大规模-Patch-seq-流程与-QC-BICCN.ipynb)
+- [脑-脊髓宏观连接图谱（Allen Connectivity）](../notebooks/generated/mouse-https-connectivity-brain-map-org-脑-脊髓宏观连接图谱-Allen-Connectivity.ipynb)
+- [跑台步态、足底、关节、EMG 与脊髓损伤恢复数据集](../notebooks/generated/mouse-https-celltypes-brain-map-org-跑台步态-足底-关节-EMG-与脊髓损伤恢复数据集.ipynb)
+
+## cross
+
+- [同细胞 RNA+ATAC 商业方案](../notebooks/generated/cross-https-www-10xgenomics-com-products-singl-同细胞-RNA-ATAC-商业方案.ipynb)
+- [Spatial ATAC-RNA / Spatial CUT&Tag-RNA](../notebooks/generated/cross-di-0579-Spatial_epigenome-transcriptome_-Spatial-ATAC-RNA-Spatial-CUT-Tag-RNA.ipynb)
+- [同组织 ATAC+两种组蛋白修饰+转录组+蛋白 panel](../notebooks/generated/cross-GSE263333-同组织-ATAC-两种组蛋白修饰-转录组-蛋白-panel.ipynb)
+- [单细胞组蛋白修饰/TF 占位方法](../notebooks/generated/cross-GSE124557-单细胞组蛋白修饰-TF-占位方法.ipynb)
+- [规模化 Patch-seq 流程（跨物种功能同源判定）](../notebooks/generated/cross-https-celltypes-brain-map-org-规模化-Patch-seq-流程-跨物种功能同源判定.ipynb)
+
+## mouse
+
+- [V3 CIN 光遗传+计算建模：左右伸肌中心的相互兴奋](../notebooks/generated/mouse-RybakLab-nsm-V3-CIN-光遗传-计算建模-左右伸肌中心的相互兴奋.ipynb)
+
+## ciona
+
+- [ci-1：幼虫脑多种遗传定义神经元群 GCaMP6s 钙成像原始数据（CRCNS/Figshare）](../notebooks/generated/ciona-https-doi-org-10-6084-m9-figshare-102891-ci-1-幼虫脑多种遗传定义神经元群-GCaMP6s-钙成像原始数据-C.ipynb)
+
+## zebra
+
+- [DANDI:000350 幼体斑马鱼全脑钙成像+虚拟现实游泳：尾部泳动信号与行为状态（Ahrens lab）](../notebooks/generated/zebra-000350-DANDI-000350-幼体斑马鱼全脑钙成像-虚拟现实游泳-尾部泳动信.ipynb)
+- [DANDI:001453 斑马鱼 vs Danionella 视觉运动策略行为数据（OMR）](../notebooks/generated/zebra-001453-DANDI-001453-斑马鱼-vs-Danionella-视觉运动策.ipynb)
+- [幼体斑马鱼 fictive 运动活动协调数据集（Zenodo）](../notebooks/generated/zebra-4964614-幼体斑马鱼-fictive-运动活动协调数据集-Zenodo.ipynb)
+
+## lamp
+
+- [lamprey Nengo 神经形态 CPG 模型 v0.1.0（Zenodo/NengoZoo）](../notebooks/generated/lamp-20360767-lamprey-Nengo-神经形态-CPG-模型-v0-1-0-Zen.ipynb)
+
+## turt
+
+- [海龟新型 bounding 游泳步态运动学数据（Dryad）](../notebooks/generated/turt-10-5061-dryad-r5v8d-海龟新型-bounding-游泳步态运动学数据-Dryad.ipynb)

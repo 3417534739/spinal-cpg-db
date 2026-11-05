@@ -1,0 +1,4 @@
+requests
+pandas
+GEOparse
+# 可选（DANDI 流式）：dandi pynwb fsspec h5py aiohttp
