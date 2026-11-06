@@ -2,12 +2,12 @@
 
 A curated literature & open-data catalog for spinal cord / motor neuron / CPG research across **11 chordate species + 1 outgroup**, built for tracing the evolution of locomotor circuit architecture.
 
-> **📊 数据库总量：相关文章 / 数据资源 / 网站共 178 条；其中 63 条带公开数据（每条一本预填 notebook，占 35%）。**
+> **📊 数据库总量：相关文章 / 数据资源 / 网站共 178 条；其中 63 条带公开数据（每个数据项附有相关研究的文章 / 数据详情，占 35%）。**
 
 **Two entry points / 两个入口：**
 
 1. **[Interactive database (main page)](https://3417534739.github.io/spinal-cpg-db/)** — `index.html`：网络图 + 全部条目 + 自动评分 + DOI/PMC/数据链接
-2. **[Notebooks index](notebooks/README.md)** — 每条带公开数据的条目一本预填 notebook（内含 EN 标题 / 中文摘要 / Highlights / 数据页原文）
+2. **[Notebooks index](notebooks/README.md)** — 每个带公开数据的数据项附有对应研究的详情 notebook（内含 EN 标题 / 中文摘要 / Highlights / 数据页原文）
 
 **English / 中文双语说明见下。**
 
@@ -28,17 +28,15 @@ Chordata (11 species):
 
 ## Dashboard at a glance / 数据看板图览
 
-以下四张图由最终确认数据（178 条）实时统计生成，与看板同口径。
+### 1 · 年代 × 研究方法分布（历史趋势）
 
-### 1 · 年代 × 大类分布（历史趋势）
+![年代×研究方法分布](img/chart-trend.svg)
 
-![年代×大类分布](img/chart-trend.svg)
+**结论（历史趋势）**：收录条目随年代显著加速——1973–2009 合计仅 30 条，2010–15 增至 25 条，2016–23 达到峰值 74 条，2024–26 三年即 42 条，占全库近四分之一。研究方法构成上，功能记录（电生理/成像类）与分子组学（测序/图谱类）始终是两大主线；2016 年以后分子组学占比明显抬升，反映单细胞/空间组学技术在脊髓与运动神经元研究中的普及。
 
-**结论（历史趋势）**：收录条目随年代显著加速——1973–2009 合计仅 30 条，2010–15 增至 25 条，2016–23 达到峰值 74 条，2024–26 三年即 42 条，占全库近四分之一。大类构成上，功能记录（电生理/成像类）与分子组学（测序/图谱类）始终是两大主线；2016 年以后分子组学占比明显抬升，反映单细胞/空间组学技术在脊髓与运动神经元研究中的普及。
+### 2 · 物种 × 研究方法 热力图
 
-### 2 · 物种 × 大类 热力图
-
-![物种×大类热力图](img/chart-heatmap.svg)
+![物种×研究方法热力图](img/chart-heatmap.svg)
 
 **结论（物种覆盖）**：七鳃鳗（27）、海鞘（25）、小鼠（21）是收录最厚的三个物种——七鳃鳗以功能记录（15）为绝对主力，配理论建模（5），体现经典 CPG 电生理+建模传统；海鞘的结构连接（7）与功能记录（8）最厚，连接组资源突出；小鼠则以功能记录（9）为主。相反，肺鱼（5）、鳌虾外群（6）、斑马鱼（7）的覆盖偏窄——肺鱼 5 条中 4 条集中于分子组学，其余类别近乎空白，是后续文献补录的优先方向。
 
@@ -67,7 +65,7 @@ Chordata (11 species):
 ## Data coverage (2026-11-06)
 
 - **178 entries**（相关文章 / 数据资源 / 网站），spanning 1973–2026
-- **63 entries (35%)** with direct open-data links (GEO / ArrayExpress / DANDI / CRCNS / Figshare / Zenodo / GitHub / official portals) — 每条一本预填 notebook
+- **63 entries (35%)** with direct open-data links (GEO / ArrayExpress / DANDI / CRCNS / Figshare / Zenodo / GitHub / official portals) — 每个数据项附有相关研究的文章 / 数据详情 notebook
 - Every entry has at least one working link (DOI / PMC / open PDF / data page)
 - Relevance scoring is computed from an explicit keyword rule bank (object / process / evidence dimensions) — no hand-tuned stars
 
