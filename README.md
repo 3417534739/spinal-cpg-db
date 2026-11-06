@@ -1,6 +1,6 @@
 # Spinal Cord / CPG Literature-Data Database (Chordata)
 
-A curated literature & open-data catalog for spinal cord / motor neuron / CPG research across **11 chordate species + 1 outgroup**, built for tracing the evolution of locomotor circuit architecture.
+A curated literature & open-data catalog for **spinal cord, brain, motor neuron / CPG** research across **11 chordate species + 1 outgroup**, built for tracing the evolution of locomotor circuit architecture. 32 of 178 entries are brain atlases / maps (whole-brain connectomes, brain single-cell & spatial atlases), included for cross-comparison with spinal cord data.
 
 > **📊 数据库总量：相关文章 / 数据资源 / 网站共 178 条；其中 63 条带公开数据（每个数据项附有相关研究的文章 / 数据详情，占 35%）。**
 
@@ -114,4 +114,4 @@ Chordata (11 species):
 - Relevance scoring is computed from an explicit keyword rule bank (object / process / evidence dimensions) — no hand-tuned stars
 
 ---
-中文说明：本库汇总 **12 个研究物种**（11 个脊索动物 + 鳌虾外群；跨物种方法资源不计入物种）的脊髓/运动神经元/CPG 文献与公开数据资源，共 **178 条**，其中 **63 条**带公开数据。每条含 DOI/PMC/数据页链接、词库自动相关度评分（对象/过程/证据三维）、研究对象过滤。`INVENTORY.md` 含逐条开放数据可得性审计与通讯作者邮箱。
+中文说明：本库汇总 **12 个研究物种**（11 个脊索动物 + 鳌虾外群；跨物种方法资源不计入物种）的脊髓、脑、运动神经元/CPG 文献与公开数据资源，共 **178 条**（其中脑图谱/脑数据 32 条，供脊髓数据跨比较），其中 **63 条**带公开数据。每条含 DOI/PMC/数据页链接、词库自动相关度评分（对象/过程/证据三维）、研究对象过滤。`INVENTORY.md` 含逐条开放数据可得性审计与通讯作者邮箱。
