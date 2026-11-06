@@ -1,5 +1,7 @@
 # Notebooks Index（按物种学名排序）
 
+> 🏠 **主数据库（静态页面）在这里：[../index.html](../index.html)** —— 网络导引图 + 全部条目浏览/排序/过滤，本页只是 notebook 目录。
+
 Every entry with an open-data link gets a pre-filled Jupyter notebook. **Each notebook itself contains** the article's English title, Chinese abstract, Cell-style Highlights, and data provenance (source type/accession/organism/sample count + verbatim description from the data page). Click to preview on GitHub; run locally or on Binder after `pip install -r requirements.txt`.
 
 > 共 63 个 notebook；索引仅作目录，详情在每本 notebook 开头。
