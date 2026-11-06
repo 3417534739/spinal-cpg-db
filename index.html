@@ -19,6 +19,26 @@
   .graphcard h2{font-size:15px;margin-bottom:2px;}
   .graphcard .ghint{font-size:12px;color:var(--muted);margin-bottom:8px;}
   #net{width:100%;height:480px;display:block;cursor:grab;border-radius:8px;background:#fbfcfe;border:1px solid var(--line);touch-action:none;}
+  .graphcard{position:relative;}
+  #netCover{position:absolute;left:15px;right:15px;top:74px;height:480px;border-radius:8px;background:#fbfcfe;display:flex;align-items:center;justify-content:center;cursor:wait;z-index:5;transition:opacity .55s ease;overflow:hidden;}
+  #netCover.done{opacity:0;pointer-events:none;}
+  #netCover::before{content:'';position:absolute;inset:0;background:
+    radial-gradient(circle 5px at 12% 30%, #6c65ad 99%, transparent) ,
+    radial-gradient(circle 4px at 22% 60%, #057996 99%, transparent),
+    radial-gradient(circle 6px at 50% 42%, #db4743 99%, transparent),
+    radial-gradient(circle 4px at 68% 28%, #f9a232 99%, transparent),
+    radial-gradient(circle 5px at 82% 58%, #16ab4b 99%, transparent),
+    radial-gradient(circle 4px at 38% 72%, #841f61 99%, transparent),
+    radial-gradient(circle 4px at 60% 78%, #00b0b1 99%, transparent),
+    radial-gradient(circle 5px at 90% 24%, #d357a0 99%, transparent),
+    radial-gradient(ellipse 90px 46px at 50% 42%, rgba(84,149,207,.10) 99%, transparent),
+    radial-gradient(ellipse 70px 40px at 30% 62%, rgba(108,101,173,.08) 99%, transparent);
+    filter:blur(.4px);}
+  .ncInner{position:relative;text-align:center;background:rgba(251,252,254,.92);padding:18px 30px;border-radius:12px;box-shadow:0 4px 18px rgba(30,40,60,.08);}
+  .ncSpin{width:26px;height:26px;margin:0 auto 10px;border-radius:50%;border:3px solid #dfe5ee;border-top-color:#5495cf;animation:ncspin .8s linear infinite;}
+  @keyframes ncspin{to{transform:rotate(360deg)}}
+  .ncMsg{font-size:13.5px;color:#3a4354;font-weight:600;}
+  .ncMsg span{display:block;margin-top:4px;font-size:12px;font-weight:400;color:#8a93a3;}
   #net:active{cursor:grabbing;}
   #tip{position:fixed;display:none;pointer-events:none;background:rgba(28,35,48,.94);color:#fff;font-size:12px;padding:7px 10px;border-radius:8px;max-width:320px;line-height:1.5;z-index:99;box-shadow:0 4px 14px rgba(0,0,0,.2);}
   #tip b{color:#ffd27d;}
@@ -70,6 +90,7 @@
     <h2>知识库网络导引图</h2>
     <div class="ghint">节点 = 总表每条数据（颜色 = 物种 11 色）＋ 五大类中心（大圆点）· <b>可拖拽</b> · <b>悬停显示标签</b> · <b>点击节点跳转对应物种</b></div>
     <canvas id="net"></canvas>
+    <div id="netCover" title="加载中，请稍候 ✋"><div class="ncInner"><div class="ncSpin"></div><div class="ncMsg">⏳ 节点们正在寻找各自的座位……<span>力导向布局计算中，通常不到一秒，马上就好</span></div></div></div>
     <div id="tip"></div>
     <div class="legend" id="legendSp"></div>
     <div class="legend" id="legendCat"></div>
@@ -394,7 +415,7 @@ eNodes.filter(n=>n.sp==='cross').forEach(n=>{
   });
 });
 let dragging=null, hoverN=null, alpha=1;
-function tick(){
+function tick(silent){
   if(alpha<0.003 && !dragging) return;
   for(let i=0;i<all.length;i++)for(let j=i+1;j<all.length;j++){
     const a=all[i],b=all[j];let dx=b.x-a.x,dy=b.y-a.y;let d2=dx*dx+dy*dy;if(d2<1)d2=1;
@@ -414,7 +435,7 @@ function tick(){
     n.vx*=0.86;n.vy*=0.86;n.x+=n.vx*alpha;n.y+=n.vy*alpha;
     n.x=Math.max(16,Math.min(W-16,n.x));n.y=Math.max(16,Math.min(H-16,n.y));
   });
-  alpha*=0.995; draw();
+  alpha*=0.995; if(!silent)draw();
 }
 function draw(){
   ctx.clearRect(0,0,W,H);
@@ -450,8 +471,15 @@ window.addEventListener('mouseup',()=>{if(dragging){dragging.fix=dragging.hub;dr
 cv.addEventListener('mouseleave',()=>{tip.style.display='none';hoverN=null;});
 cv.addEventListener('click',ev=>{const[mx,my]=pos(ev);const n=nearest(mx,my);if(n&&!n.hub){selectSp(n.sp);document.getElementById('sec-'+n.sp).scrollIntoView({behavior:'smooth'});}});
 function nearest(mx,my){let best=null,bd=144;all.forEach(n=>{const dx=n.x-mx,dy=n.y-my,d=dx*dx+dy*dy;if(d<bd+n.r*n.r&&d<bd+40){if(!best||d<bd){best=n;bd=d;}}});return best;}
-window.addEventListener('resize',()=>{resize();alpha=1;});
-alpha=1;const loop=()=>{tick();requestAnimationFrame(loop);};loop();
+window.addEventListener('resize',()=>{resize();alpha=1;let g=0;while(alpha>=0.003&&g++<1400)tick(true);draw();});
+/* 预热：同步跑完力导向布局（不绘制），收敛后一次性画出并揭开遮罩，避免加载期抖动 */
+function settle(){alpha=1;let g=0;while(alpha>=0.003&&g++<1400)tick(true);draw();}
+settle();
+const cover=document.getElementById('netCover');
+cover.style.left=cv.offsetLeft+'px'; cover.style.top=cv.offsetTop+'px';
+cover.style.width=cv.offsetWidth+'px'; cover.style.height=cv.offsetHeight+'px';
+requestAnimationFrame(()=>cover.classList.add('done'));
+const loop=()=>{tick();requestAnimationFrame(loop);};loop();
 
 document.getElementById('legendSp').innerHTML='<span class="li"><b>物种（11 色）：</b></span>'+SP.map(s=>`<span class="li"><span class="dot" style="background:${s.c};${lum(s.c)>0.72?'box-shadow:inset 0 0 0 1px #8a8f98;':''}"></span>${s.n}</span>`).join('');
 document.getElementById('legendCat').innerHTML='<span class="li"><b>五大类中心：</b></span>'+CATS.map(c=>`<span class="li"><span class="dot" style="background:${c.col};${lum(c.col)>0.72?'box-shadow:inset 0 0 0 1px #8a8f98;':''}"></span>${c.n}</span>`).join('');
