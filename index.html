@@ -479,7 +479,7 @@ function btns(e){let h='';
   if(e.doi)h+=`<a class="btn" href="${e.doi}" target="_blank">DOI</a>`;
   if(e.pmc)h+=`<a class="btn" href="${e.pmc}" target="_blank">PMC</a>`;
   if(e.data)h+=`<a class="btn" href="${e.data}" target="_blank">数据</a>`;
-  if(e.nb)h+=`<a class="btn" style="background:#0a7d43;color:#fff" href="${e.nb}" target="_blank">Notebook</a>`;
+  if(e.nb)h+=`<a class="btn" style="background:#0a7d43;color:#fff" href="https://github.com/3417534739/spinal-cpg-db/blob/main/${e.nb}" target="_blank">Notebook</a>`;
   if(e.pdf)h+=`<a class="btn" href="${e.pdf}" target="_blank">PDF</a>`;
   if(e.pub&&!e.doi&&!e.pmc)h+=`<a class="btn" href="${e.pub}" target="_blank">PubMed</a>`;
   return h||'<span class="badge" style="background:#b8791f;color:#fff">链接待补</span>';}
