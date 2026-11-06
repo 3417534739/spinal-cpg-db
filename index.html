@@ -117,6 +117,7 @@
     <button class="modebtn" id="btnAll">展开模式（全部条目）</button>
     <select id="sortSel">
       <option value="rel">排序：相关度总分（脊髓/运动神经元/CPG 优先）</option>
+      <option value="data">排序：是否有数据（有数据在前）</option>
       <option value="new">排序：时间 新→旧</option>
       <option value="old">排序：时间 旧→新</option>
     </select>
@@ -497,7 +498,7 @@ function selectSp(k){curSp=k;SP.forEach(s=>{const t=document.getElementById('tab
   if(s.k===k){t.style.background=s.c;t.style.color=lum(s.c)>0.72?'#1c2330':'#fff';}
   else{t.style.background='';t.style.color='';}});
   refresh();}
-const sorters={rel:(a,b)=>(b.score)-(a.score)||(b.y||9999)-(a.y||9999),new:(a,b)=>(b.y||9999)-a.y,old:(a,b)=>a.y-(b.y||9999)};
+const sorters={rel:(a,b)=>(b.score)-(a.score)||(b.y||9999)-(a.y||9999),data:(a,b)=>((b.data?1:0)-(a.data?1:0))||((b.score)-(a.score))||((b.y||9999)-(a.y||9999)),new:(a,b)=>(b.y||9999)-a.y,old:(a,b)=>a.y-(b.y||9999)};
 function stars(sc){const n=Math.min(5,Math.max(1,Math.round(sc*5/6)));return '★'.repeat(n)+'☆'.repeat(5-n);}
 function btns(e){let h='';
   if(e.doi)h+=`<a class="btn" href="${e.doi}" target="_blank">DOI</a>`;
