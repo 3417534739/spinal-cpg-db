@@ -88,7 +88,7 @@
 
   <div class="graphcard">
     <h2>知识库网络导引图</h2>
-    <div class="ghint">节点 = 总表每条数据（颜色 = 物种 11 色）＋ 五研究方法中心（大圆点）· <b>可拖拽</b> · <b>悬停显示标签</b> · <b>点击节点跳转对应物种</b></div>
+    <div class="ghint">节点 = 总表每条数据（颜色 = 物种 11 色）＋ 研究方法中心（大圆点）· <b>可拖拽</b> · <b>悬停显示标签</b> · <b>点击节点跳转对应物种</b></div>
     <canvas id="net"></canvas>
     <div id="netCover" title="加载中，请稍候 ✋"><div class="ncInner"><div class="ncSpin"></div><div class="ncMsg">⏳ 节点们正在寻找各自的座位……<span>力导向布局计算中，通常不到一秒，马上就好</span></div></div></div>
     <div id="tip"></div>
@@ -127,7 +127,7 @@
       <option value="CPG">研究对象：CPG/节律生成</option>
       <option value="脑">研究对象：脑</option>
     </select>
-    <span class="modehint">收起模式 = 五研究方法各收起为折叠面板（内含 TOP3）</span>
+    <span class="modehint">收起模式 = 研究方法各收起为折叠面板（内含 TOP3）</span>
   </div>
 
   <div id="content"></div>
@@ -482,7 +482,7 @@ requestAnimationFrame(()=>cover.classList.add('done'));
 const loop=()=>{tick();requestAnimationFrame(loop);};loop();
 
 document.getElementById('legendSp').innerHTML='<span class="li"><b>物种（11 色）：</b></span>'+SP.map(s=>`<span class="li"><span class="dot" style="background:${s.c};${lum(s.c)>0.72?'box-shadow:inset 0 0 0 1px #8a8f98;':''}"></span>${s.n}</span>`).join('');
-document.getElementById('legendCat').innerHTML='<span class="li"><b>五研究方法中心：</b></span>'+CATS.map(c=>`<span class="li"><span class="dot" style="background:${c.col};${lum(c.col)>0.72?'box-shadow:inset 0 0 0 1px #8a8f98;':''}"></span>${c.n}</span>`).join('');
+document.getElementById('legendCat').innerHTML='<span class="li"><b>研究方法中心：</b></span>'+CATS.map(c=>`<span class="li"><span class="dot" style="background:${c.col};${lum(c.col)>0.72?'box-shadow:inset 0 0 0 1px #8a8f98;':''}"></span>${c.n}</span>`).join('');
 
 /* ================= 物种页签与内容 ================= */
 const tabsEl=document.getElementById('tabs'), contentEl=document.getElementById('content');

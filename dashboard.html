@@ -30,8 +30,8 @@
   <h1>数据收集情报看板 <a href="index.html" style="font-size:13px;font-weight:500;vertical-align:middle;text-decoration:none;background:#0a7d43;color:#fff;padding:3px 10px;border-radius:6px;margin-left:10px">🏠 返回主数据库</a><a href="notebooks/README.md" target="_blank" style="font-size:13px;font-weight:500;vertical-align:middle;text-decoration:none;background:#3b6ea5;color:#fff;padding:3px 10px;border-radius:6px;margin-left:6px">📓 Notebooks 索引</a></h1>
   <div class="sub">对《脊索动物神经数据汇总》（124 条）的量化体检：全面性（覆盖矩阵）、可靠性（链接与数据可得性）、领域热点（CPG / 运动神经元 / 脊髓）与时间趋势</div>
   <div class="kpis" id="kpis"></div>
-  <div class="card"><h3>1 · 年代 × 研究方法分布</h3><div class="hint">按年代分箱堆叠（颜色 = 五研究方法）——可见"CPG 电生理年代 → 组学年代"的领域迁移</div><div id="chDecade"></div></div>
-  <div class="card"><h3>2 · 物种 × 研究方法 覆盖度矩阵</h3><div class="hint">格内数字 = 条目数；灰格 = 空白（覆盖缺口）。行 = 物种（演化顺序），列 = 五研究方法</div><div id="chHeat"></div></div>
+  <div class="card"><h3>1 · 年代 × 研究方法分布</h3><div class="hint">按年代分箱堆叠（颜色 = 研究方法）——可见"CPG 电生理年代 → 组学年代"的领域迁移</div><div id="chDecade"></div></div>
+  <div class="card"><h3>2 · 物种 × 研究方法 覆盖度矩阵</h3><div class="hint">格内数字 = 条目数；灰格 = 空白（覆盖缺口）。行 = 物种（演化顺序），列 = 研究方法</div><div id="chHeat"></div></div>
   <div class="card"><h3>3 · 出版源分层（按链接粗估）</h3><div class="hint">按出版源 URL 估计的层级分布：N系/Science/Cell → eLife/NC/PLOS 等高水平开放刊 → 专业期刊 → 预印本 → 数据库/在线资源</div><div id="chTier"></div></div>
   <div class="card"><h3>4 · 领域热点：CPG / 运动神经元 / 脊髓 / 连接组 / 再生 / 组学方法</h3><div class="hint">按关键词命中分类（一条可命中多个领域），按物种堆叠</div><div id="chHot"></div></div>
   <div class="card"><h3>5 · 领域热点 × 年代</h3><div class="hint">各领域条目随年代的分布——判断哪些领域在老化、哪些在扩张</div><div id="chHotTime"></div></div>
