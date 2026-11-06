@@ -2,10 +2,11 @@
 
 A curated literature & open-data catalog for spinal cord / motor neuron / CPG research across **11 chordate species + 1 outgroup**, built for tracing the evolution of locomotor circuit architecture.
 
-**Two entry points / 两个入口：**
+**Three entry points / 三个入口：**
 
 1. **[Interactive database (main page)](https://3417534739.github.io/spinal-cpg-db/)** — `index.html`：网络图 + 全部条目 + 自动评分 + DOI/PMC/数据链接
-2. **[Notebooks index](notebooks/README.md)** — 每条带公开数据的条目一本预填 notebook（内含 EN 标题 / 中文摘要 / Highlights / 数据页原文）
+2. **[Data intelligence dashboard (final)](https://3417534739.github.io/spinal-cpg-db/dashboard.html)** — `dashboard.html`：最终确认数据的情报看板（KPI / 年代×大类 / 物种×大类热力图 / 出版源分层 / 6 域热点 / 完备性排名 / 自动结论，178 条全量数据）
+3. **[Notebooks index](notebooks/README.md)** — 每条带公开数据的条目一本预填 notebook（内含 EN 标题 / 中文摘要 / Highlights / 数据页原文）
 
 **English / 中文双语说明见下。**
 
