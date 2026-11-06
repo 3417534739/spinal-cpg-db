@@ -551,7 +551,7 @@ function refresh(){
     const sec=document.createElement('div');sec.className='cat';sec.style.setProperty('--cc',c.col);
     let inner=`<h3>${c.n}</h3>`;
     if(items.length===0){inner+=`<div class="na">暂未收录（该物种在此类别下暂无公开成熟数据）</div>`;}
-    else{
+    else if(sortSel.value==='rel'){
       const sts=[...new Set(items.map(e=>e.t))];
       sts.forEach(st=>{
         const arr=items.filter(e=>e.t===st).sort(sorters[sortSel.value]);
@@ -559,14 +559,24 @@ function refresh(){
         arr.forEach(e=>sub+=entryHTML(e));
         sub+='</div>';inner+=sub;
       });
+    }else{
+      /* 非默认排序：全局平铺，排序跨数据模态生效 */
+      items.slice().sort(sorters[sortSel.value]).forEach(e=>inner+=entryHTML(e));
     }
     sec.innerHTML=inner;contentEl.appendChild(sec);
   });
 }
 const bTop=document.getElementById('btnTop'),bAll=document.getElementById('btnAll'),sortSel=document.getElementById('sortSel'),objSel=document.getElementById('objSel');
 objSel.style.display='inline-block';
-bTop.onclick=()=>{mode='top';bTop.classList.add('on');bAll.classList.remove('on');sortSel.style.display='none';refresh();};
-bAll.onclick=()=>{mode='all';bAll.classList.add('on');bTop.classList.remove('on');sortSel.style.display='inline-block';refresh();};
+/* 持久化：展开/收起模式与排序选择，刷新后保持 */
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+mode=store.get('dbMode')||mode;
+if(mode==='all'){bAll.classList.add('on');bTop.classList.remove('on');sortSel.style.display='inline-block';}
+const savedSort=store.get('dbSort');if(savedSort&&sorters[savedSort])sortSel.value=savedSort;
+bTop.onclick=()=>{mode='top';bTop.classList.add('on');bAll.classList.remove('on');sortSel.style.display='none';store.set('dbMode','top');refresh();};
+bAll.onclick=()=>{mode='all';bAll.classList.add('on');bTop.classList.remove('on');sortSel.style.display='inline-block';store.set('dbMode','all');refresh();};
+sortSel.onchange=()=>{store.set('dbSort',sortSel.value);refresh();};
+if(store.get('dbMode')==='all'||store.get('dbSort'))refresh();
 sortSel.onchange=refresh;objSel.onchange=refresh;
 selectSp('ciona');
 </script>
