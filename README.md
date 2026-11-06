@@ -99,7 +99,7 @@ Chordata (11 species):
 ## What's inside
 
 | File | Content |
-|---|---|---|
+|---|---|
 | `index.html` | Interactive single-file database: 178 entries, force-directed network graph, word-bank auto-relevance scoring (0–6), research-object filter, DOI / PMC / data-page links per entry |
 | `INVENTORY.md` | Full audit: open-data coverage per species, reasons for unavailability, corresponding-author emails, link-fix log |
 | `DATABASES.md` | ~100 neuroscience / model-organism data repositories, organized by data type |
