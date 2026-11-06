@@ -68,50 +68,13 @@ Chordata (11 species):
 
 针对Patch-seq等神经元研究专用技术的专项分析：Patch-seq是目前唯一可在同一单细胞水平实现电生理表型、细胞形态特征与转录组图谱三维关联的技术，对神经运动回路研究的支撑作用最为直接。中枢模式发生器（central pattern generator, CPG）的节律发生机制与突触整合特性（如中间神经元的电耦合效应、运动神经元的输入电阻参数），只有借助该多模态配对技术才能建立其与基因组调控层面的关联。尽管该技术累计发文量较低（近四年共73篇，2026年回升至24篇），但高影响力期刊占比突出（《Nature》《Science》各发表2篇），主要刊载期刊为《Neuron》（影响因子17.0）与《Nature Communications》；其当前核心应用价值体现在与神经元图谱（atlas）项目的整合，Allen研究所构建的高保真电生理、形态与转录组规模化联合分析管线即为典型代表，相关条目已纳入本数据库。同属“神经元功能-分子关联”研究路径的技术还包括活动依赖性转录组分析技术（TRAP/Fos）及基于单细胞电生理筛选的转录组分型方法（如七鳃鳗网状脊髓细胞分型研究），这类技术可作为本数据库中“功能记录”类数据与“分子组学”类数据的天然衔接桥梁。
 
-**我们已收集的组学数据与空白**：按条目描述关键词自动归类（可重叠），178 条中组学技术相关约 40 条——scRNA-seq 18、ATAC/染色质 10、空间转录组 9、多组学配对 6、snRNA-seq 5、活动依赖/神经元激活 4（美西螈·乌龟·爪蟾）、Patch-seq 类 3、组蛋白修饰 3（跨物种）、DNA 甲基化 1（跨物种）；非组学侧为行为/运动学 28、连接组/形态重建 8、基因组组装 7。**对照上面的技术分层，空白清晰**：① 平台级空间数据（Visium / MERFISH）0 条；② 蛋白层面（CITE-seq 等）0 条、三维基因组（Hi-C）0 条、代谢组 0 条、Smart-seq2 全长方案 0 条；③ 单独的 scATAC-seq（不与多组学捆绑）稀缺，顺式调控演化证据薄弱；④ Patch-seq 类在 CPG 核心物种（七鳃鳗、蝌蚪、龟胚胎）几近空白；⑤ 活动依赖转录组仅 4 条且无 TRAP-seq 级公共数据——而"运动前后 CPG 招募了谁"正是本库最该回答的问题。建议补录优先级：七鳃鳗/蝌蚪脊髓的 Patch-seq 或电生理-转录组配对数据 > 运动诱导的 Fos/TRAP 激活图谱 > Visium/MERFISH 脊髓切片 > 单独 scATAC > CUT&Tag enhancer 目录。这些层级数据共同支撑四个核心问题：判断 LMC-like 与 CPG 模块是否存在、区分"marker 表达"与"调控程序真正开启"、比较变态/再生/发育阶段的模块切换、做跨物种细胞类型与调控网络同源分析。
+**本数据库已收录组学数据及研究缺口分析：**
 
-## Dashboard at a glance
+当前数据库最核心的短板并非全技术平台的覆盖度不足，而是缺乏可关联分子身份、空间定位特征与中枢模式发生器（CPG）功能的多模态配对证据。现有数据集已涵盖部分空间转录组、空间增强分辨转录组测序（Stereo-seq）、独立单细胞ATAC测序（scATAC-seq）及小鼠Patch-seq相关内容，但七鳃鳗、非洲爪蟾（Xenopus）与龟胚胎的CPG脊髓仍缺乏细胞水平的功能-分子配对数据。
 
-### 1 · 年代 × 研究方法分布（历史趋势）
+第一类核心缺口为CPG神经元的功能表型与分子身份配对研究，涵盖Patch-seq、膜片钳记录联合形态重建、细胞捕获RNA测序及RNAscope多模态联合分析方案。第二类核心缺口为运动过程中CPG神经元的活动招募解析，需结合功能性游泳或在体运动观测，联合钙成像、腹根/神经束电生理记录、肌电图（EMG）检测，以及Fos/Arc、CaMPARI、TRAP等活动依赖标记后的单细胞测序技术开展研究。第三类核心缺口为CPG脊髓的空间定位分析，应优先采用RNAscope或小型化MERFISH标志物检测体系，Visium可作为候选目标区域明确后的扩展验证方案。第四类核心缺口为基因调控程序的功能验证，优先采用RNA+ATAC多组学联合测序、H3K27ac/H3K27me3修饰的CUT&Tag检测技术。
 
-![年代×研究方法分布](img/chart-trend.svg)
-
-**结论（历史趋势）**：收录条目随年代显著加速——1973–2009 合计仅 30 条，2010–15 增至 25 条，2016–23 达到峰值 74 条，2024–26 三年即 42 条，占全库近四分之一。研究方法构成上，功能记录（电生理/成像类）与分子组学（测序/图谱类）始终是两大主线；2016 年以后分子组学占比明显抬升，反映单细胞/空间组学技术在脊髓与运动神经元研究中的普及。
-
-### 2 · 物种 × 研究方法 热力图
-
-![物种×研究方法热力图](img/chart-heatmap.svg)
-
-**结论（物种覆盖）**：七鳃鳗（27）、海鞘（25）、小鼠（21）是收录最厚的三个物种——七鳃鳗以功能记录（15）为绝对主力，配理论建模（5），体现经典 CPG 电生理+建模传统；海鞘的结构连接（7）与功能记录（8）最厚，连接组资源突出；小鼠则以功能记录（9）为主。相反，肺鱼（5）、鳌虾外群（6）、斑马鱼（7）的覆盖偏窄——肺鱼 5 条中 4 条集中于分子组学，其余类别近乎空白，是后续文献补录的优先方向。
-
-### 3 · 近三年热点（2024–26 vs 全时期）
-
-![近三年热点](img/chart-recent.svg)
-
-**结论（近三年热点）**：近三年（42 条）的热点明显向**分子组学**集中——占 2024–26 新增条目的 48%（20 条），远高于其全时期基线 30%，对应大量单细胞/空间转录组 atlas 与多组学资源的爆发；功能记录类份额从 38% 回落到 21%（经典电生理产出放缓），结构连接类保持稳定略升（17% vs 15%）。理论建模近三年仅 2 条，仍是明显短板；行为和运动 4 条，其中闭环/机器人实验范式开始出现，值得追踪。
-
-### 4 · 物种收录完备性排名
-
-![物种收录排名](img/chart-rank.svg)
-
-**结论（完备性）**：条目数排名为 七鳃鳗 27 > 海鞘 25 > 小鼠 21 > 文昌鱼 14 > 非洲爪蟾 / 多鳍鱼 13 > 美西螈 12 > 乌龟 10 > 家鸡 9 > 斑马鱼 7 > 鳌虾 6 > 肺鱼 5。头部三个物种贡献了全库约 41% 的条目；尾部的肺鱼、鳌虾、斑马鱼多依赖早期经典文献与少量组学资源，公开数据可得率最低。
-
-## What's inside
-
-| File | Content |
-|---|---|
-| `index.html` | Interactive single-file database: 178 entries, force-directed network graph, word-bank auto-relevance scoring (0–6), research-object filter, DOI / PMC / data-page links per entry |
-| `INVENTORY.md` | Full audit: open-data coverage per species, reasons for unavailability, corresponding-author emails, link-fix log |
-| `DATABASES.md` | ~100 neuroscience / model-organism data repositories, organized by data type |
-| `WORDBANK.md` | Curated domain word bank (CPG / spinal cord / cell identity / electrophysiology / …) used for auto-scoring and search |
-| `data/entries.js` | All 178 entries as loadable JS |
-
-## Data coverage (2026-11-06)
-
-- **178 entries**（相关文章 / 数据资源 / 网站），spanning 1973–2026
-- **63 entries (35%)** with direct open-data links (GEO / ArrayExpress / DANDI / CRCNS / Figshare / Zenodo / GitHub / official portals) — 每个数据项附有相关研究的文章 / 数据详情 notebook
-- Every entry has at least one working link (DOI / PMC / open PDF / data page)
-- Relevance scoring is computed from an explicit keyword rule bank (object / process / evidence dimensions) — no hand-tuned stars
+CITE-seq、Hi-C、广谱代谢组及Smart-seq2全长转录组测序暂不列为全物种普适性的数据补充目标。上述技术分别适用于表面蛋白检测、特异性三维调控机制解析、变态或再生过程的代谢特征分析，以及稀有细胞类群与转录本异构体鉴定。独立scATAC-seq仅作为候选调控元件的佐证数据，而非独立的数据库覆盖目标。
 
 ---
 中文说明：本库汇总 **12 个研究物种**（11 个脊索动物 + 鳌虾外群；跨物种方法资源不计入物种）的脊髓、脑、运动神经元/CPG 文献与公开数据资源，共 **178 条**（其中脑图谱/脑数据 32 条，供脊髓数据跨比较），其中 **63 条**带公开数据。每条含 DOI/PMC/数据页链接、词库自动相关度评分（对象/过程/证据三维）、研究对象过滤。`INVENTORY.md` 含逐条开放数据可得性审计与通讯作者邮箱。
